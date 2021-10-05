@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import setAuthToken from "../utils/setAuthToken";
 import { Link } from "react-router-dom";
-import Chart from "./Chart";
-import PieChart from "./PieChart";
+
+import DarkMode from "./DarkMode";
 
 const { REACT_APP_SERVER_URL } = process.env;
 
@@ -61,8 +61,7 @@ const Profile = (props) => {
   return (
     <div className="text-center pt-4">
       {user ? userData : errorDiv()}
-      <Chart progress={progress}/>
-      {/* <PieChart progress={progress}/> */}
+      <DarkMode />
     </div>
   );
 };

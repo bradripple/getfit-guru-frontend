@@ -71,10 +71,10 @@ function ExerciseList(props) {
       exerciseId: props._id,
     };
     axios
-      .post(`${REACT_APP_SERVER_URL}/exercises`, newGoals)
+      .post(`${REACT_APP_SERVER_URL}/goals`, newGoals)
       .then((response) => {
-        console.log("===> Yay, new exercise");
-        console.log("exercise response", response);
+        console.log("===> Yay, new goal");
+        console.log("goal response", response);
         // setRedirect(true);
       })
       .catch((error) => console.log("===> Error in Signup", error));

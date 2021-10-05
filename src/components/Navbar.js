@@ -46,9 +46,6 @@ const Navbar = (props) => {
                                 <NavLink className="nav-link" to="/exercises">Exercises</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" to="/exercises/new">Submit Exercise</NavLink>
-                            </li>
-                            <li className="nav-item">
                                 <span onClick={props.handleLogout} className="nav-link logout-link">Logout</span>
                             </li>
                         </ul>

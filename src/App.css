@@ -117,42 +117,17 @@ p {
 .divBody .container .card:hover .face.face2 h2 {
 	 font-size: 2em;
 }
-.divBody .container .card:nth-child(1) .face.face2 {
+.divBody .container .card:nth-child(1n) .face.face2 {
 	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
 	 border-radius: 15px;
 }
-.divBody .container .card:nth-child(2) .face.face2 {
+.divBody .container .card:nth-child(2n) .face.face2 {
 	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
 	 border-radius: 15px;
 }
-.divBody .container .card:nth-child(3) .face.face2 {
+.divBody .container .card:nth-child(3n) .face.face2 {
 	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
 	 border-radius: 15px;
-}
- 
-.divBody .container .card:nth-child(4) .face.face2 {
-	background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
-	border-radius: 15px;
-}
-.divBody .container .card:nth-child(5) .face.face2 {
-	background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
-	border-radius: 15px;
-}
-.divBody .container .card:nth-child(6) .face.face2 {
-	background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
-	border-radius: 15px;
-}
-.divBody .container .card:nth-child(7) .face.face2 {
-	background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
-	border-radius: 15px;
-}
-.divBody .container .card:nth-child(8) .face.face2 {
-	background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
-	border-radius: 15px;
-}
-.divBody .container .card:nth-child(9) .face.face2 {
-	background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
-	border-radius: 15px;
 }
 
 .details {
@@ -232,37 +207,19 @@ p {
 .details .container .card:hover .face.face2 h2 {
 	 font-size: 2em;
 }
-.details .container .card:nth-child(1) .face.face2 {
+.details .container .card:nth-child(1n) .face.face2 {
 	 background-image: linear-gradient(40deg, #fffc00 0%, #fc00ff 45%, #00fffc 100%);
 	 border-radius: 15px;
 }
-.details .container .card:nth-child(2) .face.face2 {
+.details .container .card:nth-child(2n) .face.face2 {
 	 background-image: linear-gradient(40deg, #fc00ff 0%, #00fffc 45%, #fffc00 100%);
 	 border-radius: 15px;
 }
-.details .container .card:nth-child(3) .face.face2 {
+.details .container .card:nth-child(3n) .face.face2 {
 	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
 	 border-radius: 15px;
 }
  
-.details .container .card:nth-child(4) .face.face2 {
-	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
-	 border-radius: 15px;
-}
- 
-.details .container .card:nth-child(5) .face.face2 {
-	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
-	 border-radius: 15px;
-}
- 
-.details .container .card:nth-child(6) .face.face2 {
-	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
-	 border-radius: 15px;
-}
-.details .container .card:nth-child(7) .face.face2 {
-	 background-image: linear-gradient(40deg, #00fffc 0%, #fc00ff 45%, #fffc00 100%);
-	 border-radius: 15px;
-}
- 
+
 
  

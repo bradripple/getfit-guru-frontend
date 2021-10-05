@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
+import setAuthToken from "../utils/setAuthToken";
 
 import RepsTracker from "./trackers/RepsTracker";
 import SetsTracker from "./trackers/SetsTracker";
@@ -19,6 +20,11 @@ const ExerciseDetails = (props) => {
   const [reps, setReps] = useState(0);
   const [sets, setSets] = useState(0);
   const [steps, setSteps] = useState(props.steps);
+  const [goals, setGoals] = useState([]);
+
+  let token = localStorage.getItem("jwtToken");
+
+  setAuthToken(token);
 
   const increaseSets = () => {
     const newSetsNumber = sets >= 30 ? 10 : sets + 1;
@@ -76,13 +82,24 @@ const ExerciseDetails = (props) => {
     
   };
 
+  useEffect(() => {
+    const fetchGoals = async () => {
+      const response = await axios.get(`${REACT_APP_SERVER_URL}/goals`);
+        //  console.log("fetch goals", response.data.goals);
+      // const { results } = response.data.routines;
+      setGoals(response.data.goals);
+    };
+    fetchGoals();
+  }, []);
+
+console.log('goals', goals)
   return (
     <div className="card">
       <div className="face face1">
         <div className="content">
           <span className="stars"></span>
           <h2 className="java">{props.muscleGroup}</h2>
-          <img className="exerciseImg" src="https://i.imgur.com/76devJo.jpg" alt="" />
+          <img className="exerciseImg" src={props.img_url} alt="" />
           <p className="java">Steps: {props.steps}</p>
           {props.type === "Resistance" ? ( 
             <>
